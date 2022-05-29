@@ -1,0 +1,2322 @@
+[
+  {
+    "sex": "male",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 600
+  },
+  {
+    "sex": "male",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 45
+  },
+  {
+    "sex": "male",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 11
+  },
+  {
+    "sex": "male",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 60
+  },
+  {
+    "sex": "male",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 0.9
+  },
+  {
+    "sex": "male",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 0.9
+  },
+  {
+    "sex": "male",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 12
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1
+  },
+  {
+    "sex": "male",
+    "name": "folate",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 300
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 1.8
+  },
+  {
+    "sex": "male",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 4
+  },
+  {
+    "sex": "male",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 20
+  },
+  {
+    "sex": "male",
+    "name": "choline",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 375
+  },
+  {
+    "sex": "male",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 900
+  },
+  {
+    "sex": "male",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 75
+  },
+  {
+    "sex": "male",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 75
+  },
+  {
+    "sex": "male",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1.2
+  },
+  {
+    "sex": "male",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1.3
+  },
+  {
+    "sex": "male",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 16
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1.3
+  },
+  {
+    "sex": "male",
+    "name": "folate",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 400
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 2.4
+  },
+  {
+    "sex": "male",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 5
+  },
+  {
+    "sex": "male",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 25
+  },
+  {
+    "sex": "male",
+    "name": "choline",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 550
+  },
+  {
+    "sex": "male",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 900
+  },
+  {
+    "sex": "male",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 90
+  },
+  {
+    "sex": "male",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 120
+  },
+  {
+    "sex": "male",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1.2
+  },
+  {
+    "sex": "male",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1.3
+  },
+  {
+    "sex": "male",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 16
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1.3
+  },
+  {
+    "sex": "male",
+    "name": "folate",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 400
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 2.4
+  },
+  {
+    "sex": "male",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 5
+  },
+  {
+    "sex": "male",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 30
+  },
+  {
+    "sex": "male",
+    "name": "choline",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 550
+  },
+  {
+    "sex": "male",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 900
+  },
+  {
+    "sex": "male",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 90
+  },
+  {
+    "sex": "male",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 120
+  },
+  {
+    "sex": "male",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1.2
+  },
+  {
+    "sex": "male",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1.3
+  },
+  {
+    "sex": "male",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 16
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1.3
+  },
+  {
+    "sex": "male",
+    "name": "folate",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 400
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 2.4
+  },
+  {
+    "sex": "male",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 5
+  },
+  {
+    "sex": "male",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 30
+  },
+  {
+    "sex": "male",
+    "name": "choline",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 550
+  },
+  {
+    "sex": "male",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 900
+  },
+  {
+    "sex": "male",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 90
+  },
+  {
+    "sex": "male",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 15
+  },
+  {
+    "sex": "male",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 120
+  },
+  {
+    "sex": "male",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1.2
+  },
+  {
+    "sex": "male",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1.3
+  },
+  {
+    "sex": "male",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 16
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1.7
+  },
+  {
+    "sex": "male",
+    "name": "folate",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 400
+  },
+  {
+    "sex": "male",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 2.4
+  },
+  {
+    "sex": "male",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 5
+  },
+  {
+    "sex": "male",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 30
+  },
+  {
+    "sex": "male",
+    "name": "choline",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 550
+  },
+  {
+    "sex": "female",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 600
+  },
+  {
+    "sex": "female",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 45
+  },
+  {
+    "sex": "female",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 11
+  },
+  {
+    "sex": "female",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 60
+  },
+  {
+    "sex": "female",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 0.9
+  },
+  {
+    "sex": "female",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 0.9
+  },
+  {
+    "sex": "female",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 12
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1
+  },
+  {
+    "sex": "female",
+    "name": "folate",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 300
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 1.8
+  },
+  {
+    "sex": "female",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 4
+  },
+  {
+    "sex": "female",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 20
+  },
+  {
+    "sex": "female",
+    "name": "choline",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 375
+  },
+  {
+    "sex": "female",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 700
+  },
+  {
+    "sex": "female",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 65
+  },
+  {
+    "sex": "female",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 75
+  },
+  {
+    "sex": "female",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1
+  },
+  {
+    "sex": "female",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1
+  },
+  {
+    "sex": "female",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 14
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1.2
+  },
+  {
+    "sex": "female",
+    "name": "folate",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 400
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 2.4
+  },
+  {
+    "sex": "female",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 5
+  },
+  {
+    "sex": "female",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 25
+  },
+  {
+    "sex": "female",
+    "name": "choline",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 400
+  },
+  {
+    "sex": "female",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 700
+  },
+  {
+    "sex": "female",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 75
+  },
+  {
+    "sex": "female",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 90
+  },
+  {
+    "sex": "female",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 14
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1.3
+  },
+  {
+    "sex": "female",
+    "name": "folate",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 400
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 2.4
+  },
+  {
+    "sex": "female",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 5
+  },
+  {
+    "sex": "female",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 30
+  },
+  {
+    "sex": "female",
+    "name": "choline",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 425
+  },
+  {
+    "sex": "female",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 700
+  },
+  {
+    "sex": "female",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 75
+  },
+  {
+    "sex": "female",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 90
+  },
+  {
+    "sex": "female",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 14
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1.3
+  },
+  {
+    "sex": "female",
+    "name": "folate",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 400
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 2.4
+  },
+  {
+    "sex": "female",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 5
+  },
+  {
+    "sex": "female",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 30
+  },
+  {
+    "sex": "female",
+    "name": "choline",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 425
+  },
+  {
+    "sex": "female",
+    "name": "vitamin a",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 700
+  },
+  {
+    "sex": "female",
+    "name": "vitamin c",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 75
+  },
+  {
+    "sex": "female",
+    "name": "vitamin d",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin e",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "vitamin k",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 90
+  },
+  {
+    "sex": "female",
+    "name": "thiamin",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "riboflavin",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "niacin",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 14
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b6",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1.5
+  },
+  {
+    "sex": "female",
+    "name": "folate",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 400
+  },
+  {
+    "sex": "female",
+    "name": "vitamin b12",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 2.4
+  },
+  {
+    "sex": "female",
+    "name": "pantothenic acid",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 5
+  },
+  {
+    "sex": "female",
+    "name": "biotin",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 30
+  },
+  {
+    "sex": "female",
+    "name": "choline",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 425
+  },
+  {
+    "sex": "male",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1300
+  },
+  {
+    "sex": "male",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 25
+  },
+  {
+    "sex": "male",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 700
+  },
+  {
+    "sex": "male",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 2
+  },
+  {
+    "sex": "male",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 120
+  },
+  {
+    "sex": "male",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 8
+  },
+  {
+    "sex": "male",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 240
+  },
+  {
+    "sex": "male",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1.9
+  },
+  {
+    "sex": "male",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 34
+  },
+  {
+    "sex": "male",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1250
+  },
+  {
+    "sex": "male",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 40
+  },
+  {
+    "sex": "male",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 8
+  },
+  {
+    "sex": "male",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 2500
+  },
+  {
+    "sex": "male",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1200
+  },
+  {
+    "sex": "male",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 2.3
+  },
+  {
+    "sex": "male",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1300
+  },
+  {
+    "sex": "male",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 35
+  },
+  {
+    "sex": "male",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 890
+  },
+  {
+    "sex": "male",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 3
+  },
+  {
+    "sex": "male",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 150
+  },
+  {
+    "sex": "male",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 11
+  },
+  {
+    "sex": "male",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 410
+  },
+  {
+    "sex": "male",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 2.2
+  },
+  {
+    "sex": "male",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 43
+  },
+  {
+    "sex": "male",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1250
+  },
+  {
+    "sex": "male",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 55
+  },
+  {
+    "sex": "male",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 11
+  },
+  {
+    "sex": "male",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 3000
+  },
+  {
+    "sex": "male",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1500
+  },
+  {
+    "sex": "male",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 2.3
+  },
+  {
+    "sex": "male",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1000
+  },
+  {
+    "sex": "male",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 35
+  },
+  {
+    "sex": "male",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 900
+  },
+  {
+    "sex": "male",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 4
+  },
+  {
+    "sex": "male",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 150
+  },
+  {
+    "sex": "male",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 8
+  },
+  {
+    "sex": "male",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 400
+  },
+  {
+    "sex": "male",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 2.3
+  },
+  {
+    "sex": "male",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 45
+  },
+  {
+    "sex": "male",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 700
+  },
+  {
+    "sex": "male",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 55
+  },
+  {
+    "sex": "male",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 11
+  },
+  {
+    "sex": "male",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 3400
+  },
+  {
+    "sex": "male",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1500
+  },
+  {
+    "sex": "male",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 2.3
+  },
+  {
+    "sex": "male",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1000
+  },
+  {
+    "sex": "male",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 35
+  },
+  {
+    "sex": "male",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 900
+  },
+  {
+    "sex": "male",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 4
+  },
+  {
+    "sex": "male",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 150
+  },
+  {
+    "sex": "male",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 8
+  },
+  {
+    "sex": "male",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 420
+  },
+  {
+    "sex": "male",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 2.3
+  },
+  {
+    "sex": "male",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 45
+  },
+  {
+    "sex": "male",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 700
+  },
+  {
+    "sex": "male",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 55
+  },
+  {
+    "sex": "male",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 11
+  },
+  {
+    "sex": "male",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 3400
+  },
+  {
+    "sex": "male",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1500
+  },
+  {
+    "sex": "male",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 2.3
+  },
+  {
+    "sex": "male",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1000
+  },
+  {
+    "sex": "male",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 30
+  },
+  {
+    "sex": "male",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 900
+  },
+  {
+    "sex": "male",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 4
+  },
+  {
+    "sex": "male",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 150
+  },
+  {
+    "sex": "male",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 8
+  },
+  {
+    "sex": "male",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 420
+  },
+  {
+    "sex": "male",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 2.3
+  },
+  {
+    "sex": "male",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 45
+  },
+  {
+    "sex": "male",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 700
+  },
+  {
+    "sex": "male",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 55
+  },
+  {
+    "sex": "male",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 11
+  },
+  {
+    "sex": "male",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 3400
+  },
+  {
+    "sex": "male",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1500
+  },
+  {
+    "sex": "male",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 2
+  },
+  {
+    "sex": "female",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1300
+  },
+  {
+    "sex": "female",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 21
+  },
+  {
+    "sex": "female",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 700
+  },
+  {
+    "sex": "female",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 2
+  },
+  {
+    "sex": "female",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 120
+  },
+  {
+    "sex": "female",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 8
+  },
+  {
+    "sex": "female",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 240
+  },
+  {
+    "sex": "female",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1.6
+  },
+  {
+    "sex": "female",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 34
+  },
+  {
+    "sex": "female",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1250
+  },
+  {
+    "sex": "female",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 9,
+    "max": 13,
+    "value": 40
+  },
+  {
+    "sex": "female",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 8
+  },
+  {
+    "sex": "female",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 2300
+  },
+  {
+    "sex": "female",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 9,
+    "max": 13,
+    "value": 1200
+  },
+  {
+    "sex": "female",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 2.3
+  },
+  {
+    "sex": "female",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1300
+  },
+  {
+    "sex": "female",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 24
+  },
+  {
+    "sex": "female",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 890
+  },
+  {
+    "sex": "female",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 3
+  },
+  {
+    "sex": "female",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 150
+  },
+  {
+    "sex": "female",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 15
+  },
+  {
+    "sex": "female",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 360
+  },
+  {
+    "sex": "female",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1.6
+  },
+  {
+    "sex": "female",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 43
+  },
+  {
+    "sex": "female",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1250
+  },
+  {
+    "sex": "female",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 14,
+    "max": 18,
+    "value": 55
+  },
+  {
+    "sex": "female",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 9
+  },
+  {
+    "sex": "female",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 2300
+  },
+  {
+    "sex": "female",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 14,
+    "max": 18,
+    "value": 1500
+  },
+  {
+    "sex": "female",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 2.3
+  },
+  {
+    "sex": "female",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1000
+  },
+  {
+    "sex": "female",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 25
+  },
+  {
+    "sex": "female",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 900
+  },
+  {
+    "sex": "female",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 3
+  },
+  {
+    "sex": "female",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 150
+  },
+  {
+    "sex": "female",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 18
+  },
+  {
+    "sex": "female",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 310
+  },
+  {
+    "sex": "female",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1.8
+  },
+  {
+    "sex": "female",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 45
+  },
+  {
+    "sex": "female",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 700
+  },
+  {
+    "sex": "female",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 19,
+    "max": 30,
+    "value": 55
+  },
+  {
+    "sex": "female",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 8
+  },
+  {
+    "sex": "female",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 2600
+  },
+  {
+    "sex": "female",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 19,
+    "max": 30,
+    "value": 1500
+  },
+  {
+    "sex": "female",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 2.3
+  },
+  {
+    "sex": "female",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1000
+  },
+  {
+    "sex": "female",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 25
+  },
+  {
+    "sex": "female",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 900
+  },
+  {
+    "sex": "female",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 3
+  },
+  {
+    "sex": "female",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 150
+  },
+  {
+    "sex": "female",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 18
+  },
+  {
+    "sex": "female",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 320
+  },
+  {
+    "sex": "female",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1.8
+  },
+  {
+    "sex": "female",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 45
+  },
+  {
+    "sex": "female",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 700
+  },
+  {
+    "sex": "female",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 31,
+    "max": 50,
+    "value": 55
+  },
+  {
+    "sex": "female",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 8
+  },
+  {
+    "sex": "female",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 2600
+  },
+  {
+    "sex": "female",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 31,
+    "max": 50,
+    "value": 1500
+  },
+  {
+    "sex": "female",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 2.3
+  },
+  {
+    "sex": "female",
+    "name": "calcium ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1200
+  },
+  {
+    "sex": "female",
+    "name": "chromium ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 20
+  },
+  {
+    "sex": "female",
+    "name": "copper ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 900
+  },
+  {
+    "sex": "female",
+    "name": "fluoride ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 3
+  },
+  {
+    "sex": "female",
+    "name": "iodine ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 150
+  },
+  {
+    "sex": "female",
+    "name": "iron ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 8
+  },
+  {
+    "sex": "female",
+    "name": "magnesium ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 320
+  },
+  {
+    "sex": "female",
+    "name": "manganese ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1.8
+  },
+  {
+    "sex": "female",
+    "name": "molybdenum ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 45
+  },
+  {
+    "sex": "female",
+    "name": "phosphorus ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 700
+  },
+  {
+    "sex": "female",
+    "name": "selenium ",
+    "unit": "μg",
+    "min": 51,
+    "max": 70,
+    "value": 55
+  },
+  {
+    "sex": "female",
+    "name": "zinc ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 8
+  },
+  {
+    "sex": "female",
+    "name": "potassium ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 2600
+  },
+  {
+    "sex": "female",
+    "name": "sodium ",
+    "unit": "mg",
+    "min": 51,
+    "max": 70,
+    "value": 1500
+  },
+  {
+    "sex": "female",
+    "name": "chloride ",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 2
+  }
+]
