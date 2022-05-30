@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkopfood"]=self["webpackChunkopfood"]||[]).push([[443],{2031:function(n,o,u){u.r(o),u.d(o,{default:function(){return d}});var t=u(9269);const a={class:"about"},e=(0,t._)("h1",null,"This is an about page",-1),r=[e];function s(n,o){return(0,t.wg)(),(0,t.iD)("div",a,r)}var c=u(7617);const f={},i=(0,c.Z)(f,[["render",s]]);var d=i}}]);
+//# sourceMappingURL=about.068cf8fb.js.map
