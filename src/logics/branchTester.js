@@ -90,8 +90,11 @@ const settingKeys = 'sex age meals days macroTarget nutritionEm timeEm cutTarget
 const filterRecipes = ({ onlyList, noList }) => {
   let filtered = [...recipeDb];
   if (onlyList) {
-    filtered = filtered.filter(({ labels }) => labels.some((l) => onlyList.split(', ').includes(l)));
-    filtered = filtered.filter(({ title }) => onlyList.split(', ').some((l) => title.toLowerCase().match(l)));
+    filtered = filtered
+      .filter(({ labels, title }) => {
+        const onlyrr = onlyList.split(', ');
+        return onlyrr.some((l) => labels.includes(l) || title.match(l));
+      });
   }
   if (noList) {
     filtered = filtered.filter(({ labels }) => !labels.some((l) => noList.split(', ').includes(l)));
