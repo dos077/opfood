@@ -10,16 +10,16 @@
   control-color="deep-orange-4"
   :navigation-active-icon="`mdi-numeric-${slide + 1}-circle`"
 >
-  <q-carousel-slide v-for="({ list }, i) in bestLists" :key="i" :name="i"
+  <q-carousel-slide v-for="(list, i) in lists" :key="i" :name="i"
     :class="{ 'q-px-none': isPhone }"
   >
     <div class="row q-col-gutter-md" :class="isPhone ? 'q-mt-lg' : 'q-mt-sm'">
-      <recipe-card v-for="recipe in list" :key="recipe.title" :recipe="recipe"
-        :expanded="tabSelected === 1" />
       <div class="col-12">
         <nutrition-list :nutrition="getMarcos(list)" title="Marco Requirement Met"
           :expanded="tabSelected === 0"/>
       </div>
+      <recipe-card v-for="recipe in list" :key="recipe.title" :recipe="recipe"
+        :expanded="tabSelected === 1" />
       <div class="col-12">
         <nutrition-list :nutrition="getMicros(list)" title="Micro Requirement Met"
         :expanded="tabSelected === 2" />
@@ -40,27 +40,18 @@ import NutritionList from './NutritionList.vue';
 import findDailyRequirement, { sumNutritions, checkRequirement } from '../helpers/dailyRequire';
 
 export default {
-  name: 'RecipesList',
+  name: 'SavesList',
   components: { RecipeCard, NutritionList },
   data: () => ({
     tabSelected: 1,
     slide: 0,
-    savesOpen: false,
   }),
   computed: {
-    ...mapState(['bestLists', 'currentList']),
+    ...mapState(['currentList']),
     ...mapState('saves', ['lists']),
     ...mapState('settings', ['age', 'sex']),
     isPhone() {
       return this.$q.screen.lt.sm;
-    },
-  },
-  watch: {
-    slide: {
-      immediate: true,
-      handler(to) {
-        this.$store.commit('load', this.bestLists[to].list);
-      },
     },
   },
   methods: {

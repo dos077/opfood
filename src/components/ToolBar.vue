@@ -1,26 +1,32 @@
 <template>
 <div class="col-12">
-  <q-toolbar :class="{ 'q-px-lg q-pt-md': !isPhone }">
-    <q-btn v-if="tabState === 1" flat round
-      icon="mdi-arrow-left"
-      @click="$store.commit('load', null)" />
-    <q-btn v-if="tabState === 0 && bestList" flat round
-      icon="mdi-view-list"
-      @click="$store.commit('load', bestList)" />
-    <q-toolbar-title class="q-ml-sm">
-      <span class="gt-xs text-h6 text-capitalize">
-        {{ tabState === 0 ? 'recipes optimizer' : 'recipes list' }}
-      </span>
-      <span class="lt-sm text-weight-bold">
-        {{ tabState === 0 ? 'Optimizer' : 'List' }}
-      </span>
-    </q-toolbar-title>
+  <q-toolbar :class="{ 'q-px-lg q-mt-md': !isPhone }">
+    <q-btn @click="$store.commit('setPage', 'search')" flat
+      :label="page === 'search' ? undefined : 'search'"
+      :icon="page === 'search' ? 'mdi-magnify' : undefined"
+      :disable="page === 'search'"
+      :color="page === 'search' ? 'deep-orange-4' : undefined"
+    />
+    <q-btn v-if="bestLists.length > 0"
+      @click="$store.commit('setPage', 'list')" flat
+      :label="page === 'list' ? undefined : 'results'"
+      :icon="page === 'list' ? 'mdi-view-list' : undefined"
+      :disable="page === 'list'"
+      :color="page === 'list' ? 'deep-orange-4' : undefined"
+    />
+    <q-btn v-if="lists && lists.length > 0"
+      @click="$store.commit('setPage', 'saves')" flat
+      :label="page === 'saves' ? undefined : 'bookmarks'"
+      :icon="page === 'saves' ? 'mdi-bookmark-multiple' : undefined"
+      :disable="page === 'saves'"
+      :color="page === 'saves' ? 'deep-orange-4' : undefined"
+    />
     <q-space />
-    <q-btn label="bookmarks" color="deep-orange-4" flat
+    <q-btn v-if="page === 'list'" :label="savesOpen ? undefined : 'save'" color="deep-orange-4" flat
       @click="savesOpen = !savesOpen"
-      :icon-right="savesOpen ? 'mdi-chevron-up' : 'mdi-chevron-down'" />
+      :icon-right="savesOpen ? 'mdi-close' : undefined" />
   </q-toolbar>
-  <div style="height: 0; overflow: visible; position: relative;"
+  <div v-if="page === 'list'" style="height: 0; overflow: visible; position: relative;"
     :class="{ 'q-mx-lg': !isPhone }">
     <q-slide-transition>
       <q-card v-show="savesOpen" transition="scale" outline
@@ -51,7 +57,7 @@ export default {
     savesOpen: false,
   }),
   computed: {
-    ...mapState(['bestList', 'currentList']),
+    ...mapState(['bestLists', 'currentList', 'page']),
     ...mapState('saves', ['lists']),
     isPhone() {
       return this.$q.screen.lt.sm;
@@ -70,6 +76,10 @@ export default {
     loadSearchRes() {
       const { bestList } = this;
       this.$store.commit('loadSearch', bestList);
+    },
+    togglePage() {
+      const newPage = this.page === 'search' ? 'list' : 'search';
+      this.$store.commit('setPage', newPage);
     },
   },
 };

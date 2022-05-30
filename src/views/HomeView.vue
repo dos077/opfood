@@ -13,6 +13,9 @@
         <q-tab-panel :name="1" style="padding-top: 0;">
           <recipes-list />
         </q-tab-panel>
+        <q-tab-panel :name="2" style="padding-top: 0;">
+          <saves-list />
+        </q-tab-panel>
       </q-tab-panels>
     </div>
   </div>
@@ -23,6 +26,7 @@
 import { mapState } from 'vuex';
 import SettingPanel from '../components/SettingPanel.vue';
 import RecipesList from '../components/RecipesList.vue';
+import SavesList from '../components/SavesList.vue';
 import ToolBar from '../components/ToolBar.vue';
 
 export default {
@@ -30,6 +34,7 @@ export default {
   components: {
     SettingPanel,
     RecipesList,
+    SavesList,
     ToolBar,
   },
   data: () => ({
@@ -44,7 +49,8 @@ export default {
   watch: {
     page(to) {
       if (to === 'search') this.panelSelected = 0;
-      else this.panelSelected = 1;
+      else if (to === 'list') this.panelSelected = 1;
+      else this.panelSelected = 2;
     },
     isDesktop: {
       immediate: true,

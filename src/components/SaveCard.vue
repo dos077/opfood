@@ -14,10 +14,6 @@
             flat color="green" class="q-mr-sm">
             save
           </q-btn>
-          <q-btn v-if="(index === null || lists[index]) && currentList !== list"
-            flat @click="load">
-            load
-          </q-btn>
           <q-space />
           <q-btn v-if="index !== null && lists[index]"
             flat color="deep-orange-4" @click="deleteDialog = true">
@@ -63,7 +59,7 @@ export default {
     deleteDialog: false,
   }),
   computed: {
-    ...mapState(['bestList', 'currentList']),
+    ...mapState(['currentList']),
     ...mapState('saves', ['lists']),
     list() {
       if (this.index === null) return this.bestList;
@@ -75,14 +71,14 @@ export default {
   },
   methods: {
     save() {
-      const { index, bestList, lists } = this;
+      const { index, currentList, lists } = this;
       if (!lists[index]) {
-        this.$store.commit('saves/add', { list: bestList, index });
+        this.$store.commit('saves/add', { list: currentList, index });
       } else this.confirmDialog = true;
     },
     confirmSave() {
-      const { index, bestList } = this;
-      this.$store.commit('saves/add', { list: bestList, index });
+      const { index, currentList } = this;
+      this.$store.commit('saves/add', { list: currentList, index });
       this.confirmDialog = false;
     },
     load() {

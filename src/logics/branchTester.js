@@ -27,7 +27,12 @@ const scoreTime = (recipes) => {
   return scores.reduce((a, b) => a + b) / scores.length;
 };
 
-const fractionTarget = ({ fraction }, target) => 3 - 3 / (1 + (0.25 / (fraction - target)) ** 2);
+const fractionTarget = ({ fraction }, target) => {
+  // return 3 - 3 / (1 + (0.25 / (fraction - target)) ** 2);
+  if (Math.abs(fraction - target) > 0.5) return 0;
+  if (fraction < target) return 6 * (fraction - target + 0.5);
+  return -6 * (fraction - target - 0.5);
+};
 
 const scoreCutTarget = ({ macros }, target) => calAvg(macros.map((m) => fractionTarget(m, target)));
 
@@ -141,7 +146,7 @@ const optimizer = (setupSettings) => {
         bestBranch = branch;
         bestScore = score;
       } */
-      const cutIndex = bestLists.find(({ prf }) => score > prf);
+      const cutIndex = bestLists.findIndex(({ prf }) => score > prf);
       if (cutIndex > -1) {
         bestLists.splice(cutIndex, 0, { list: branch, prf: score });
       } else if (bestLists.length < 5) {

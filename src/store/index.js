@@ -63,8 +63,8 @@ export default createStore({
       // state.currentList = state.bestList;
     },
     loadSearch(state, best) {
-      state.bestList = best;
-      state.currentList = best;
+      state.bestLists = best;
+      state.page = 'list';
     },
     load(state, list) {
       state.currentList = list;
@@ -102,18 +102,22 @@ export default createStore({
       while (threadsDone.length < threads) {
         await wait(2000);
       }
-      let best = null;
-      let bestPrf = 0;
-      threadsDone.forEach(({ list, prf }) => {
-        if (!best || bestPrf < prf) {
-          best = list;
-          bestPrf = prf;
-        }
+      const bestLists = [];
+      threadsDone.forEach((lists) => {
+        lists.forEach(({ list, prf }) => {
+          const cutIndex = bestLists.findIndex((dp) => prf > dp.prf);
+          if (cutIndex > -1) {
+            bestLists.splice(cutIndex, 0, { list, prf });
+          } else if (bestLists.length < 5) {
+            bestLists.push({ list, prf });
+          }
+          if (bestLists.length > 5) bestLists.pop();
+        });
       });
       workers.forEach((worker) => worker.terminate());
       console.log('search speed score', (Date.now() - start) / 60000);
-      if (best) {
-        commit('loadSearch', best);
+      if (bestLists.length > 0) {
+        commit('loadSearch', bestLists);
       }
       commit('setLoading', null);
     },
