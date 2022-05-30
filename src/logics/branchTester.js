@@ -91,9 +91,11 @@ const filterRecipes = ({ onlyList, noList }) => {
   let filtered = [...recipeDb];
   if (onlyList) {
     filtered = filtered.filter(({ labels }) => labels.some((l) => onlyList.split(', ').includes(l)));
+    filtered = filtered.filter(({ title }) => onlyList.split(', ').some((l) => title.toLowerCase().match(l)));
   }
   if (noList) {
     filtered = filtered.filter(({ labels }) => !labels.some((l) => noList.split(', ').includes(l)));
+    filtered = filtered.filter(({ title }) => !noList.split(', ').some((l) => title.toLowerCase().match(l)));
   }
   return filtered;
 };

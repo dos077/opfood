@@ -11,4 +11,8 @@ module.exports = defineConfig({
       rtlSupport: false,
     },
   },
+
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/opfood/'
+    : './',
 });
