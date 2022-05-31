@@ -1,25 +1,28 @@
 <template>
 <div class="col-12">
   <q-toolbar :class="{ 'q-px-lg q-mt-md': !isPhone }">
-    <q-btn @click="$store.commit('setPage', 'search')" flat
+    <q-btn @click="$store.commit('setPage', 'search')"
       :label="page === 'search' ? undefined : 'search'"
       :icon="page === 'search' ? 'mdi-magnify' : undefined"
-      :disable="page === 'search'"
+      :outline="page === 'search'"
+      :flat="page !== 'search'"
       :color="page === 'search' ? 'deep-orange-4' : undefined"
     />
     <q-btn v-if="bestLists.length > 0"
-      @click="$store.commit('setPage', 'list')" flat
+      @click="$store.commit('setPage', 'list')"
       :label="page === 'list' ? undefined : 'results'"
       :icon="page === 'list' ? 'mdi-view-list' : undefined"
-      :disable="page === 'list'"
+      :outline="page === 'list'"
+      :flat="page !== 'list'"
       :color="page === 'list' ? 'deep-orange-4' : undefined"
     />
     <q-btn v-if="lists && lists.length > 0"
-      @click="$store.commit('setPage', 'saves')" flat
+      @click="$store.commit('setPage', 'saves')"
       :label="page === 'saves' ? undefined : 'bookmarks'"
       :icon="page === 'saves' ? 'mdi-bookmark-multiple' : undefined"
-      :disable="page === 'saves'"
       :color="page === 'saves' ? 'deep-orange-4' : undefined"
+      :outline="page === 'saves'"
+      :flat="page !== 'saves'"
     />
     <q-space />
     <q-btn v-if="page === 'list'" :label="savesOpen ? undefined : 'save'" color="deep-orange-4" flat

@@ -7,6 +7,7 @@
   height="100%"
   navigation
   navigation-position="top"
+  swipeable
   control-color="deep-orange-4"
   :navigation-active-icon="`mdi-numeric-${slide + 1}-circle`"
 >
@@ -14,12 +15,12 @@
     :class="{ 'q-px-none': isPhone }"
   >
     <div class="row q-col-gutter-md" :class="isPhone ? 'q-mt-lg' : 'q-mt-sm'">
+      <recipe-card v-for="recipe in list" :key="recipe.title" :recipe="recipe"
+        :expanded="tabSelected === 1" />
       <div class="col-12">
         <nutrition-list :nutrition="getMarcos(list)" title="Marco Requirement Met"
           :expanded="tabSelected === 0"/>
       </div>
-      <recipe-card v-for="recipe in list" :key="recipe.title" :recipe="recipe"
-        :expanded="tabSelected === 1" />
       <div class="col-12">
         <nutrition-list :nutrition="getMicros(list)" title="Micro Requirement Met"
         :expanded="tabSelected === 2" />

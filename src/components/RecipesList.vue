@@ -7,6 +7,7 @@
   height="100%"
   navigation
   navigation-position="top"
+  swipeable
   control-color="deep-orange-4"
   :navigation-active-icon="`mdi-numeric-${slide + 1}-circle`"
 >
