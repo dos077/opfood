@@ -38,7 +38,7 @@ const scoreCutTarget = ({ macros }, target) => calAvg(macros.map((m) => fraction
 
 export { scoreTime, scoreNutrients };
 
-const batchLimit = 12000;
+const batchLimit = 7500;
 
 const batchBuilder = (depth, db = recipeDb) => {
   let batch = [];

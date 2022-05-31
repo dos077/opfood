@@ -1,1 +1,562 @@
-[{"sex":"male","name":"total watera","unit":"L","min":9,"max":13,"value":2.4},{"sex":"male","name":"carbohydrate","unit":"g","min":9,"max":13,"value":130},{"sex":"male","name":"total fiber","unit":"g","min":9,"max":13,"value":31},{"sex":"male","name":"fat","unit":"g","min":9,"max":13,"value":null},{"sex":"male","name":"linoleic acid","unit":"g","min":9,"max":13,"value":12},{"sex":"male","name":"α-linolenic acid","unit":"g","min":9,"max":13,"value":1.2},{"sex":"male","name":"proteinb","unit":"g","min":9,"max":13,"value":34},{"sex":"male","name":"total watera","unit":"L","min":14,"max":18,"value":3.3},{"sex":"male","name":"carbohydrate","unit":"g","min":14,"max":18,"value":130},{"sex":"male","name":"total fiber","unit":"g","min":14,"max":18,"value":38},{"sex":"male","name":"fat","unit":"g","min":14,"max":18,"value":null},{"sex":"male","name":"linoleic acid","unit":"g","min":14,"max":18,"value":16},{"sex":"male","name":"α-linolenic acid","unit":"g","min":14,"max":18,"value":1.6},{"sex":"male","name":"proteinb","unit":"g","min":14,"max":18,"value":52},{"sex":"male","name":"total watera","unit":"L","min":19,"max":30,"value":3.7},{"sex":"male","name":"carbohydrate","unit":"g","min":19,"max":30,"value":130},{"sex":"male","name":"total fiber","unit":"g","min":19,"max":30,"value":38},{"sex":"male","name":"fat","unit":"g","min":19,"max":30,"value":null},{"sex":"male","name":"linoleic acid","unit":"g","min":19,"max":30,"value":17},{"sex":"male","name":"α-linolenic acid","unit":"g","min":19,"max":30,"value":1.6},{"sex":"male","name":"proteinb","unit":"g","min":19,"max":30,"value":56},{"sex":"male","name":"total watera","unit":"L","min":31,"max":50,"value":3.7},{"sex":"male","name":"carbohydrate","unit":"g","min":31,"max":50,"value":130},{"sex":"male","name":"total fiber","unit":"g","min":31,"max":50,"value":38},{"sex":"male","name":"fat","unit":"g","min":31,"max":50,"value":null},{"sex":"male","name":"linoleic acid","unit":"g","min":31,"max":50,"value":17},{"sex":"male","name":"α-linolenic acid","unit":"g","min":31,"max":50,"value":1.6},{"sex":"male","name":"proteinb","unit":"g","min":31,"max":50,"value":56},{"sex":"male","name":"total watera","unit":"L","min":51,"max":70,"value":3.7},{"sex":"male","name":"carbohydrate","unit":"g","min":51,"max":70,"value":130},{"sex":"male","name":"total fiber","unit":"g","min":51,"max":70,"value":30},{"sex":"male","name":"fat","unit":"g","min":51,"max":70,"value":null},{"sex":"male","name":"linoleic acid","unit":"g","min":51,"max":70,"value":14},{"sex":"male","name":"α-linolenic acid","unit":"g","min":51,"max":70,"value":1.6},{"sex":"male","name":"proteinb","unit":"g","min":51,"max":70,"value":56},{"sex":"female","name":"total watera","unit":"L","min":9,"max":13,"value":2.1},{"sex":"female","name":"carbohydrate","unit":"g","min":9,"max":13,"value":130},{"sex":"female","name":"total fiber","unit":"g","min":9,"max":13,"value":26},{"sex":"female","name":"fat","unit":"g","min":9,"max":13,"value":null},{"sex":"female","name":"linoleic acid","unit":"g","min":9,"max":13,"value":10},{"sex":"female","name":"α-linolenic acid","unit":"g","min":9,"max":13,"value":1},{"sex":"female","name":"proteinb","unit":"g","min":9,"max":13,"value":34},{"sex":"female","name":"total watera","unit":"L","min":14,"max":18,"value":2.3},{"sex":"female","name":"carbohydrate","unit":"g","min":14,"max":18,"value":130},{"sex":"female","name":"total fiber","unit":"g","min":14,"max":18,"value":26},{"sex":"female","name":"fat","unit":"g","min":14,"max":18,"value":null},{"sex":"female","name":"linoleic acid","unit":"g","min":14,"max":18,"value":11},{"sex":"female","name":"α-linolenic acid","unit":"g","min":14,"max":18,"value":1.1},{"sex":"female","name":"proteinb","unit":"g","min":14,"max":18,"value":46},{"sex":"female","name":"total watera","unit":"L","min":19,"max":30,"value":2.7},{"sex":"female","name":"carbohydrate","unit":"g","min":19,"max":30,"value":130},{"sex":"female","name":"total fiber","unit":"g","min":19,"max":30,"value":25},{"sex":"female","name":"fat","unit":"g","min":19,"max":30,"value":null},{"sex":"female","name":"linoleic acid","unit":"g","min":19,"max":30,"value":12},{"sex":"female","name":"α-linolenic acid","unit":"g","min":19,"max":30,"value":1.1},{"sex":"female","name":"proteinb","unit":"g","min":19,"max":30,"value":46},{"sex":"female","name":"total watera","unit":"L","min":31,"max":50,"value":2.7},{"sex":"female","name":"carbohydrate","unit":"g","min":31,"max":50,"value":130},{"sex":"female","name":"total fiber","unit":"g","min":31,"max":50,"value":25},{"sex":"female","name":"fat","unit":"g","min":31,"max":50,"value":null},{"sex":"female","name":"linoleic acid","unit":"g","min":31,"max":50,"value":12},{"sex":"female","name":"α-linolenic acid","unit":"g","min":31,"max":50,"value":1.1},{"sex":"female","name":"proteinb","unit":"g","min":31,"max":50,"value":46},{"sex":"female","name":"total watera","unit":"L","min":51,"max":70,"value":2.7},{"sex":"female","name":"carbohydrate","unit":"g","min":51,"max":70,"value":130},{"sex":"female","name":"total fiber","unit":"g","min":51,"max":70,"value":21},{"sex":"female","name":"fat","unit":"g","min":51,"max":70,"value":null},{"sex":"female","name":"linoleic acid","unit":"g","min":51,"max":70,"value":11},{"sex":"female","name":"α-linolenic acid","unit":"g","min":51,"max":70,"value":1.1},{"sex":"female","name":"proteinb","unit":"g","min":51,"max":70,"value":46}]
+[
+  {
+    "sex": "male",
+    "name": "total watera",
+    "unit": "L",
+    "min": 9,
+    "max": 13,
+    "value": 2.4
+  },
+  {
+    "sex": "male",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 130
+  },
+  {
+    "sex": "male",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 31
+  },
+  {
+    "sex": "male",
+    "name": "fat",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": null
+  },
+  {
+    "sex": "male",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 12
+  },
+  {
+    "sex": "male",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 1.2
+  },
+  {
+    "sex": "male",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 34
+  },
+  {
+    "sex": "male",
+    "name": "total watera",
+    "unit": "L",
+    "min": 14,
+    "max": 18,
+    "value": 3.3
+  },
+  {
+    "sex": "male",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 130
+  },
+  {
+    "sex": "male",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 38
+  },
+  {
+    "sex": "male",
+    "name": "fat",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": null
+  },
+  {
+    "sex": "male",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 16
+  },
+  {
+    "sex": "male",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 1.6
+  },
+  {
+    "sex": "male",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 52
+  },
+  {
+    "sex": "male",
+    "name": "total watera",
+    "unit": "L",
+    "min": 19,
+    "max": 30,
+    "value": 3.7
+  },
+  {
+    "sex": "male",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 130
+  },
+  {
+    "sex": "male",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 38
+  },
+  {
+    "sex": "male",
+    "name": "fat",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": null
+  },
+  {
+    "sex": "male",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 17
+  },
+  {
+    "sex": "male",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 1.6
+  },
+  {
+    "sex": "male",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 56
+  },
+  {
+    "sex": "male",
+    "name": "total watera",
+    "unit": "L",
+    "min": 31,
+    "max": 50,
+    "value": 3.7
+  },
+  {
+    "sex": "male",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 130
+  },
+  {
+    "sex": "male",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 38
+  },
+  {
+    "sex": "male",
+    "name": "fat",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": null
+  },
+  {
+    "sex": "male",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 17
+  },
+  {
+    "sex": "male",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 1.6
+  },
+  {
+    "sex": "male",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 56
+  },
+  {
+    "sex": "male",
+    "name": "total watera",
+    "unit": "L",
+    "min": 51,
+    "max": 70,
+    "value": 3.7
+  },
+  {
+    "sex": "male",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 130
+  },
+  {
+    "sex": "male",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 30
+  },
+  {
+    "sex": "male",
+    "name": "fat",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": null
+  },
+  {
+    "sex": "male",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 14
+  },
+  {
+    "sex": "male",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 1.6
+  },
+  {
+    "sex": "male",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 56
+  },
+  {
+    "sex": "female",
+    "name": "total watera",
+    "unit": "L",
+    "min": 9,
+    "max": 13,
+    "value": 2.1
+  },
+  {
+    "sex": "female",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 130
+  },
+  {
+    "sex": "female",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 26
+  },
+  {
+    "sex": "female",
+    "name": "fat",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": null
+  },
+  {
+    "sex": "female",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 10
+  },
+  {
+    "sex": "female",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 1
+  },
+  {
+    "sex": "female",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 9,
+    "max": 13,
+    "value": 34
+  },
+  {
+    "sex": "female",
+    "name": "total watera",
+    "unit": "L",
+    "min": 14,
+    "max": 18,
+    "value": 2.3
+  },
+  {
+    "sex": "female",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 130
+  },
+  {
+    "sex": "female",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 26
+  },
+  {
+    "sex": "female",
+    "name": "fat",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": null
+  },
+  {
+    "sex": "female",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 11
+  },
+  {
+    "sex": "female",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 14,
+    "max": 18,
+    "value": 46
+  },
+  {
+    "sex": "female",
+    "name": "total watera",
+    "unit": "L",
+    "min": 19,
+    "max": 30,
+    "value": 2.7
+  },
+  {
+    "sex": "female",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 130
+  },
+  {
+    "sex": "female",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 25
+  },
+  {
+    "sex": "female",
+    "name": "fat",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": null
+  },
+  {
+    "sex": "female",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 12
+  },
+  {
+    "sex": "female",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 19,
+    "max": 30,
+    "value": 46
+  },
+  {
+    "sex": "female",
+    "name": "total watera",
+    "unit": "L",
+    "min": 31,
+    "max": 50,
+    "value": 2.7
+  },
+  {
+    "sex": "female",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 130
+  },
+  {
+    "sex": "female",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 25
+  },
+  {
+    "sex": "female",
+    "name": "fat",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": null
+  },
+  {
+    "sex": "female",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 12
+  },
+  {
+    "sex": "female",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 31,
+    "max": 50,
+    "value": 46
+  },
+  {
+    "sex": "female",
+    "name": "total watera",
+    "unit": "L",
+    "min": 51,
+    "max": 70,
+    "value": 2.7
+  },
+  {
+    "sex": "female",
+    "name": "carbohydrate",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 130
+  },
+  {
+    "sex": "female",
+    "name": "total fiber",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 21
+  },
+  {
+    "sex": "female",
+    "name": "fat",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": null
+  },
+  {
+    "sex": "female",
+    "name": "linoleic acid",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 11
+  },
+  {
+    "sex": "female",
+    "name": "α-linolenic acid",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 1.1
+  },
+  {
+    "sex": "female",
+    "name": "proteinb",
+    "unit": "g",
+    "min": 51,
+    "max": 70,
+    "value": 46
+  }
+]

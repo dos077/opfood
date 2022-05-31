@@ -6,6 +6,21 @@ macroDb.forEach((ev) => {
   if (ev.name.match('carbohydrate')) parsedMacros.push({ ...ev, name: 'carbohydrates' });
   else if (ev.name.match('protein')) parsedMacros.push({ ...ev, name: 'protein' });
   else if (ev.name.match('fiber')) parsedMacros.push({ ...ev, name: 'dietary fiber' });
+  else if (ev.name.match('linoleic') || ev.name.match('linolenic ')) {
+    const {
+      value, sex, min, max,
+    } = ev;
+    const oldEntry = parsedMacros
+      .find((dp) => dp.name === 'polyunsaturated fat'
+        && dp.sex === sex
+        && dp.min === min
+        && dp.max === max);
+    if (oldEntry) {
+      oldEntry.value += value;
+    } else {
+      parsedMacros.push({ ...ev, name: 'polyunsaturated fat' });
+    }
+  }
 });
 
 const findRequire = ({ sex, age }) => {

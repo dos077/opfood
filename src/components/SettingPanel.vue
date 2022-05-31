@@ -35,11 +35,26 @@
   <q-card-actions>
     <q-space />
     <q-btn color="deep-orange-4" @click="$store.dispatch('search')">search</q-btn>
+    <q-separator vertical class="q-mx-md" />
+    <q-btn flat round dense icon="mdi-information-outline" @click="introOn = true" />
   </q-card-actions>
   <q-dialog v-model="loadingOn" persistent>
     <span class="text-h5 text-white">{{ loadingMsg }}
       <q-spinner color="white" />
     </span>
+  </q-dialog>
+  <q-dialog v-model="introOn">
+    <q-card>
+      <q-card-section>
+        <p v-for="(p, i) in intro" :key="i">
+          {{ p }}
+        </p>
+      </q-card-section>
+      <q-card-actions>
+        <q-btn label="find recipes" flat color="deep-orange-4"
+          @click="introOn = false" />
+      </q-card-actions>
+    </q-card>
   </q-dialog>
 </q-card>
 </template>
@@ -56,10 +71,17 @@ import TimeEmPanel from './settings/timeEmPanel.vue';
 import OnlyPanel from './settings/onlyPanel.vue';
 import NoPanel from './settings/noPanel.vue';
 
+const intro = [
+  'Planning a healthy diet can feel like a difficult puzzle, with dozens of macro and micro nutrients to keep track of. Lucky for us, the age of data has made many otherwise obscure nutritional facts accessible through the internet. This app cobbles together hundreds of popular recipes, and gives you the most optimized recipes from a batch of 100,000 combinations, based on preference toward quickness, deficit or surplus, and fulfillment of micro nutrients.',
+  'This is no substitute for medical or dietician advisories, especially if planning for a diet with restrictions. However, it’s a better starting point than just chicken, rice and broccoli.',
+];
+
 export default {
   name: 'SettingPanel',
   data: () => ({
     loadingOn: false,
+    introOn: true,
+    intro,
   }),
   components: {
     SexPanel,
@@ -83,6 +105,11 @@ export default {
       if (to === null) this.loadingOn = false;
       else this.loadingOn = true;
     },
+  },
+  mounted() {
+    if (localStorage && localStorage.opfoodSettings) {
+      this.introOn = false;
+    }
   },
 };
 </script>
