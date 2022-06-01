@@ -28,6 +28,15 @@
     <q-btn v-if="page === 'list'" :label="savesOpen ? undefined : 'save'" color="deep-orange-4" flat
       @click="savesOpen = !savesOpen"
       :icon-right="savesOpen ? 'mdi-close' : undefined" />
+    <q-btn v-if="page === 'saves'" label="share"
+      color="deep-orange-4" flat
+      @click="shareUrl">
+      <q-popup-proxy>
+        <q-banner>
+          Link copied
+        </q-banner>
+      </q-popup-proxy>
+    </q-btn>
   </q-toolbar>
   <div v-if="page === 'list'" style="height: 0; overflow: visible; position: relative;"
     :class="{ 'q-mx-lg': !isPhone }">
@@ -58,10 +67,11 @@ export default {
   props: ['tabState'],
   data: () => ({
     savesOpen: false,
+    sharedMsg: false,
   }),
   computed: {
     ...mapState(['bestLists', 'currentList', 'page']),
-    ...mapState('saves', ['lists']),
+    ...mapState('saves', ['lists', 'saveSelected']),
     isPhone() {
       return this.$q.screen.lt.sm;
     },
@@ -83,6 +93,13 @@ export default {
     togglePage() {
       const newPage = this.page === 'search' ? 'list' : 'search';
       this.$store.commit('setPage', newPage);
+    },
+    shareUrl() {
+      const titles = this.saveSelected.map(({ title }) => title);
+      const url = new URL(window.location.href);
+      url.searchParams.append('titles', titles.join('|'));
+      navigator.clipboard.writeText(url.toString());
+      this.sharedMsg = true;
     },
   },
 };

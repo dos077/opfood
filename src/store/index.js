@@ -17,6 +17,7 @@ const saves = {
   namespaced: true,
   state: () => ({
     lists: localStore.read(),
+    saveSelected: null,
   }),
   mutations: {
     add(state, { list, index }) {
@@ -27,6 +28,9 @@ const saves = {
     remove(state, index) {
       localStore.remove(index);
       state.lists = localStore.read();
+    },
+    selectSave(state, val) {
+      state.saveSelected = val;
     },
   },
 };

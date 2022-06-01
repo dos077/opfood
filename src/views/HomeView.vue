@@ -28,6 +28,7 @@ import SettingPanel from '../components/SettingPanel.vue';
 import RecipesList from '../components/RecipesList.vue';
 import SavesList from '../components/SavesList.vue';
 import ToolBar from '../components/ToolBar.vue';
+import recipeDb from '../helpers/recipeDb';
 
 export default {
   name: 'HomeView',
@@ -59,6 +60,18 @@ export default {
         else this.$store.commit('setThreads', 4);
       },
     },
+  },
+  mounted() {
+    const query = window.location.search;
+    const urlParams = new URLSearchParams(query);
+    const titles = urlParams.get('titles');
+    if (titles) {
+      const recipes = titles
+        .split('|')
+        .map((title) => recipeDb.find((dp) => dp.title === title));
+      this.$store.commit('loadSearch', [{ list: recipes }]);
+      this.$store.commit('setPage', 'list');
+    }
   },
 };
 </script>

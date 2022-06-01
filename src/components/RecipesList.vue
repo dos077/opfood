@@ -84,6 +84,12 @@ export default {
       const reqMet = this.getReqMet(list);
       return reqMet.others;
     },
+    shareUrl(list) {
+      const titles = list.map(({ title }) => title);
+      const url = new URL(window.location.href);
+      url.searchParams.append('titles', titles.join('|'));
+      navigator.clipboard.writeText(url.toString());
+    },
   },
 };
 </script>

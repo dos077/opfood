@@ -55,6 +55,15 @@ export default {
       return this.$q.screen.lt.sm;
     },
   },
+  watch: {
+    slide: {
+      immediate: true,
+      handler(to) {
+        const selectedList = this.lists[to];
+        this.$store.commit('saves/selectSave', selectedList);
+      },
+    },
+  },
   methods: {
     getReqMet(list) {
       const { age, sex } = this;
@@ -74,6 +83,12 @@ export default {
     getOthers(list) {
       const reqMet = this.getReqMet(list);
       return reqMet.others;
+    },
+    shareUrl(list) {
+      const titles = list.map(({ title }) => title);
+      const url = new URL(window.location.href);
+      url.searchParams.append('titles', titles.join('|'));
+      navigator.clipboard.writeText(url.toString());
     },
   },
 };
