@@ -71,6 +71,9 @@ export default {
         .map((title) => recipeDb.find((dp) => dp.title === title));
       this.$store.commit('loadSearch', [{ list: recipes }]);
       this.$store.commit('setPage', 'list');
+      const url = new URL(window.location);
+      url.searchParams.delete('titles');
+      window.history.replaceState({}, '', url);
     }
   },
 };
