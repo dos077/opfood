@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 
 const searchUrl = 'https://whisk.com/recipe-nutrition-calculator/';
-const recipePath = './src/data/recipe.json';
+const fwPath = './src/data/fwTube.json';
 const hotThaiPath = './src/data/hotThai.json';
 const preppyPath = './src/data/preppy.json';
 const marionPath = './src/data/marion.json';
@@ -54,7 +54,7 @@ const main = async () => {
   });
   const page = await browser.newPage();
 
-  const recipes = loadData(recipePath);
+  const recipes = loadData(fwPath);
   const hotThai = loadData(hotThaiPath);
   const preppy = loadData(preppyPath);
   const marion = loadData(marionPath);

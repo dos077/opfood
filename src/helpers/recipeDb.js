@@ -1,5 +1,6 @@
-const blogJson = require('../data/blog.json');
-const recipeJson = require('../data/recipe.json');
+// const blogJson = require('../data/blog.json');
+// const recipeJson = require('../data/recipe.json');
+const fwJson = require('../data/fwTube.json');
 const thaiJson = require('../data/hotThai.json');
 const preppyJson = require('../data/preppy.json');
 const whiskJson = require('../data/whisk.json');
@@ -48,7 +49,7 @@ const parseLabels = (labels) => {
   return parsed;
 };
 
-blogJson.forEach(({ title, labels, youtubeId }) => {
+/* blogJson.forEach(({ title, labels, youtubeId }) => {
   const recipe = recipeJson.find((rp) => rp.youtubeId === youtubeId);
   const whisk = whiskJson.find(({ recipeUrl }) => recipeUrl === recipe.recipeUrl);
   if (whisk && whisk.nutrition) {
@@ -66,9 +67,10 @@ blogJson.forEach(({ title, labels, youtubeId }) => {
       thumbnail,
     });
   }
-});
+}); */
 
 const megaRecipes = [
+  ...fwJson,
   ...thaiJson,
   ...preppyJson,
   ...marionJson,
@@ -81,6 +83,7 @@ megaRecipes.forEach((recipe) => {
     if (whisk && whisk.nutrition) {
       db.push({
         ...recipe,
+        total: recipe.cook && recipe.prep ? recipe.cook + recipe.prep : recipe.total,
         labels: parseLabels(recipe.labels),
         nutrition: parseNutrition(
           whisk.nutrition,
