@@ -53,13 +53,6 @@ export default {
       else if (to === 'list') this.panelSelected = 1;
       else this.panelSelected = 2;
     },
-    isDesktop: {
-      immediate: true,
-      handler(to) {
-        if (to) this.$store.commit('setThreads', 10);
-        else this.$store.commit('setThreads', 4);
-      },
-    },
   },
   mounted() {
     const query = window.location.search;

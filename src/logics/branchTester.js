@@ -38,9 +38,7 @@ const scoreCutTarget = ({ macros }, target) => calAvg(macros.map((m) => fraction
 
 export { scoreTime, scoreNutrients };
 
-const batchLimit = 7500;
-
-const batchBuilder = (depth, db = recipeDb) => {
+const batchBuilder = (depth, batchLimit, db = recipeDb) => {
   let batch = [];
   const levelLimt = batchLimit ** (1 / depth);
   for (let i = 0; i < depth; i += 1) {
@@ -82,9 +80,10 @@ const defaultSettings = () => ({
   cutTargetEm: 1,
   onlyList: null,
   noList: null,
+  batchLimit: 5000,
 });
 
-const settingKeys = 'sex age meals days macroTarget nutritionEm timeEm cutTargetEm onlyList noList'
+const settingKeys = 'sex age meals days macroTarget nutritionEm timeEm cutTargetEm onlyList noList batchLimit'
   .split(' ');
 
 const filterRecipes = ({ onlyList, noList }) => {
@@ -121,10 +120,13 @@ const optimizer = (setupSettings) => {
 
   const run = () => {
     const {
-      sex, age, meals, days, macroTarget, nutritionEm, timeEm, cutTargetEm, onlyList, noList,
+      sex,
+      age,
+      meals,
+      days, macroTarget, nutritionEm, timeEm, cutTargetEm, onlyList, noList, batchLimit,
     } = settings;
     const filtered = filterRecipes({ onlyList, noList });
-    const batch = batchBuilder(meals, filtered);
+    const batch = batchBuilder(meals, batchLimit, filtered);
     const dailyReq = findRequire({ sex, age });
     // let bestBranch = null;
     // let bestScore = null;

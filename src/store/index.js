@@ -54,7 +54,7 @@ export default createStore({
   state: () => ({
     bestLists: [],
     currentList: null,
-    threads: 10,
+    threads: 4,
     loadingMsg: null,
     page: 'search',
   }),

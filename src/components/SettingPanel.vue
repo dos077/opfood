@@ -30,6 +30,9 @@
       <div class="col-12 col-sm-6 q-mb-sm">
         <no-panel />
       </div>
+      <div class="col-12 col-sm-6 q-mb-sm">
+        <depth-panel />
+      </div>
     </div>
   </q-card-section>
   <q-card-actions>
@@ -70,6 +73,7 @@ import NutritionEmPanel from './settings/nutritionEmPanel.vue';
 import TimeEmPanel from './settings/timeEmPanel.vue';
 import OnlyPanel from './settings/onlyPanel.vue';
 import NoPanel from './settings/noPanel.vue';
+import depthPanel from './settings/depthPanel.vue';
 
 const intro = [
   'Planning a healthy diet can feel like a difficult puzzle, with dozens of macro and micro nutrients to keep track of. Lucky for us, the age of data has made many otherwise obscure nutritional facts accessible through the internet. This app cobbles together hundreds of popular recipes, and gives you the most optimized recipes from a batch of 100,000 combinations, based on preference toward quickness, deficit or surplus, and fulfillment of micro nutrients.',
@@ -93,6 +97,7 @@ export default {
     TimeEmPanel,
     OnlyPanel,
     NoPanel,
+    depthPanel,
   },
   computed: {
     ...mapState(['loadingMsg']),
