@@ -7,6 +7,11 @@
     <q-slider v-model="targetSelected" :min="0" :max="2" :step="0.5" @change="update"
       markers :marker-labels="markerLabels"
       color="deep-orange-3" />
+    <q-tooltip :delay="700">
+      <span class="text-caption">
+        Emphasis on fullfilling micro nutrient requirements
+      </span>
+    </q-tooltip>
   </div>
 </div>
 </template>

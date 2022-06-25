@@ -3,24 +3,45 @@
   <q-card flat bordered>
     <q-card-section horizontal>
       <q-avatar v-if="index !== null" class="gt-xs">{{ index + 1 }}</q-avatar>
-      <q-separator class="gt-xs" vertical />
-      <q-card-section>
+      <q-card-section v-if="list" class="lt-sm">
+        {{ list.map((r) => r.title).join(' | ') }}
+      </q-card-section>
+      <q-separator vertical />
+      <q-card-section class="gt-xs">
         <q-chip v-for="recipe in list" :key="recipe.title" outline square>
           {{ recipe.title }}
         </q-chip>
-        <q-separator v-if="index !==null || currentList !== list" class="q-my-sm" />
+        <q-separator v-if="index !==null || saveList !== list" class="q-my-sm" />
         <q-card-actions style="margin-bottom: -0.8rem;">
-          <q-btn v-if="currentList && currentList !== lists[index]" @click="save"
-            flat color="green" class="q-mr-sm">
+          <q-btn v-if="saveList && saveList !== lists[index]" @click="save"
+            flat color="green" class="q-mr-sm"
+            dense
+          >
             save
           </q-btn>
           <q-space />
           <q-btn v-if="index !== null && lists[index]"
-            flat color="deep-orange-4" @click="deleteDialog = true">
+            flat color="deep-orange-4" @click="deleteDialog = true"
+            dense
+          >
             delete
           </q-btn>
         </q-card-actions>
       </q-card-section>
+      <q-card-actions class="lt-sm" vertical>
+        <q-btn v-if="saveList && saveList !== lists[index]"
+          @click="save"
+          flat round color="green"
+          icon="mdi-content-save"
+          dense
+        />
+        <q-btn v-if="index !== null && lists[index]"
+          flat round color="deep-orange-4"
+          @click="deleteDialog = true"
+          icon="mdi-delete"
+          dense
+        />
+      </q-card-actions>
     </q-card-section>
   </q-card>
   <q-dialog v-model="confirmDialog" persistent>
@@ -53,7 +74,7 @@ import { mapState } from 'vuex';
 
 export default {
   name: 'SaveCard',
-  props: ['index'],
+  props: ['sList', 'index'],
   data: () => ({
     confirmDialog: false,
     deleteDialog: false,
@@ -61,6 +82,9 @@ export default {
   computed: {
     ...mapState(['currentList']),
     ...mapState('saves', ['lists']),
+    saveList() {
+      return this.sList || this.currentList;
+    },
     list() {
       if (this.index === null) return this.bestList;
       return this.lists[this.index] || [];
@@ -71,14 +95,16 @@ export default {
   },
   methods: {
     save() {
-      const { index, currentList, lists } = this;
+      const {
+        index, saveList, lists,
+      } = this;
       if (!lists[index]) {
-        this.$store.commit('saves/add', { list: currentList, index });
+        this.$store.commit('saves/add', { list: saveList, index });
       } else this.confirmDialog = true;
     },
     confirmSave() {
-      const { index, currentList } = this;
-      this.$store.commit('saves/add', { list: currentList, index });
+      const { index, saveList } = this;
+      this.$store.commit('saves/add', { list: saveList, index });
       this.confirmDialog = false;
     },
     load() {

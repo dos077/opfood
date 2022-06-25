@@ -16,8 +16,9 @@
     <q-card-section :class="{ 'col-12': expanded, 'col-7': !expanded, 'q-pa-none': isPhone }">
       <q-separator v-if="!expanded" class="q-mb-md" />
       <div v-if="expanded" class="text-h6">{{ recipe.title }}</div>
-      <div v-if="!expanded" class="text-weight-bold ellipsis">{{ recipe.title }}</div>
+      <div v-if="!expanded" class="text-weight-bold ellipsis q-px-md">{{ recipe.title }}</div>
       <div v-if="expanded" class="text-subtitle1 q-mb-sm">{{ totalTime }}</div>
+      <div v-else class="text-caption q-px-md ellipsis">{{ totalTime }}</div>
       <div v-if="expanded && !isPhone">
         <span v-for="label in labels" :key="label"
           class="text-overline q-mr-md">

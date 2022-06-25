@@ -1,12 +1,17 @@
 <template>
 <div class="row">
   <div class="text-overline text-uppercase q-mr-md col-auto">
-    target
+    macros
   </div>
   <div class="col">
     <q-slider v-model="targetSelected" :min="0.5" :max="1.5" :step="0.25" @change="update"
       markers :marker-labels="markerLabels"
       color="deep-orange-3" />
+    <q-tooltip :delay="700">
+      <span class="text-caption">
+        NIH recommended daily intakes
+      </span>
+    </q-tooltip>
   </div>
 </div>
 </template>

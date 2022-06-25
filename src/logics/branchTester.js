@@ -18,8 +18,8 @@ const scoreNutrients = ({ micros }) => {
 
 const scoreRecipeTime = ({ total }) => {
   if (total <= 15) return 3;
-  if (total >= 195) return 0;
-  return 3 - (total - 15) / 60;
+  if (total >= 120) return 0;
+  return 3 - (total - 15) / 35;
 };
 
 const scoreTime = (recipes) => {

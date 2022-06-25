@@ -5,7 +5,13 @@
   </div>
   <div class="col">
     <q-slider v-model="targetSelected" :min="0" :max="2" :step="1"
-      markers :marker-labels="markerLabels"  color="deep-orange-3" />
+      markers :marker-labels="markerLabels"  color="deep-orange-3"
+    />
+    <q-tooltip :delay="700">
+      <span class="text-caption">
+        Thorough search can overwhelm slower devices!
+      </span>
+    </q-tooltip>
   </div>
 </div>
 </template>

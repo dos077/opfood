@@ -1,11 +1,16 @@
 <template>
 <div class="row">
   <div class="text-overline text-uppercase q-mr-md col-auto">
-    target emphasis
+    macros emphasis
   </div>
   <div class="col">
     <q-slider v-model="targetSelected" :min="0" :max="2" :step="0.5" @change="update"
       markers :marker-labels="markerLabels"  color="deep-orange-3" />
+    <q-tooltip :delay="700">
+      <span class="text-caption">
+        Emphasis on fulfilling macros target
+      </span>
+    </q-tooltip>
   </div>
 </div>
 </template>

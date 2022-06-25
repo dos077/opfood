@@ -70,6 +70,10 @@ export default createStore({
       state.bestLists = best;
       state.page = 'list';
     },
+    addSearch(state, addition) {
+      if (!state.bestLists) state.bestLists = [];
+      state.bestLists.push(...addition);
+    },
     load(state, list) {
       state.currentList = list;
     },
@@ -84,7 +88,7 @@ export default createStore({
     },
   },
   actions: {
-    async search({ state, commit, rootState }) {
+    async search({ state, commit, rootState }, doneCall) {
       const { threads } = state;
       const searchSettings = {};
       settingKeys.forEach((key) => {
@@ -121,7 +125,12 @@ export default createStore({
       workers.forEach((worker) => worker.terminate());
       console.log('search speed score', (Date.now() - start) / 60000);
       if (bestLists.length > 0) {
-        commit('loadSearch', bestLists);
+        if (doneCall) {
+          commit('addSearch', bestLists);
+          doneCall();
+        } else {
+          commit('loadSearch', bestLists);
+        }
       }
       commit('setLoading', null);
     },
