@@ -1,14 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import QuickList from '@/views/QuickList.vue';
 import SavesList from '@/components/SavesList.vue';
-import HomeView from '@/views/HomeView.vue';
 import AdvanceView from '@/views/AdvanceView.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView,
+    redirect: '/quick',
   },
   {
     path: '/quick',
