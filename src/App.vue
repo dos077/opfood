@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import { ref } from 'vue';
 import QuickBar from '@/components/quick/QuickBar.vue';
 import BookmarksBar from '@/components/bookmarks/BookmarksBar.vue';
 import AdvanceBar from '@/components/advance/AdvanceBar.vue';
@@ -26,10 +25,12 @@ export default {
     AdvanceBar,
   },
 
-  setup() {
-    return {
-      leftDrawerOpen: ref(false),
-    };
+  created() {
+    if (sessionStorage.redirect) {
+      const { redirect } = sessionStorage;
+      delete sessionStorage.redirect;
+      this.$router.push(redirect);
+    }
   },
 };
 </script>

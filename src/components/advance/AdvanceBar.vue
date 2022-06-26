@@ -31,16 +31,19 @@
     to="bookmarks"
   />
   <q-btn round flat
+    v-if="page === 'search'"
     class="lt-sm"
     icon="mdi-flash"
     to="quick"
   />
   <q-btn flat
+    v-if="page === 'search'"
     class="gt-xs"
     icon="mdi-flash"
     label="quick search"
     to="quick"
   />
+  <bar-save-button v-if="page === 'results'" />
 </q-toolbar>
 <q-toolbar class="lt-sm">
   <q-btn flat
@@ -59,10 +62,12 @@
 
 <script>
 import { mapState } from 'vuex';
+import BarSaveButton from '@/components/BarSaveButton.vue';
 
 export default {
   name: 'AdvanceBar',
   components: {
+    BarSaveButton,
   },
   data: () => ({
     currentTab: 'search',

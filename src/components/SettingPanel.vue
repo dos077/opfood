@@ -64,6 +64,7 @@
 
 <script>
 import { mapState } from 'vuex';
+import intro from '@/helpers/intro';
 import SexPanel from './settings/sexPanel.vue';
 import AgePanel from './settings/agePanel.vue';
 import MealsPanel from './settings/mealsPanel.vue';
@@ -75,16 +76,11 @@ import OnlyPanel from './settings/onlyPanel.vue';
 import NoPanel from './settings/noPanel.vue';
 import depthPanel from './settings/depthPanel.vue';
 
-const intro = [
-  'Planning a healthy diet can feel like a difficult puzzle, with dozens of macro and micro nutrients to keep track of. Lucky for us, the age of data has made many otherwise obscure nutritional facts accessible through the internet. This app cobbles together hundreds of popular recipes, and gives you the most optimized recipes from a batch of 100,000 combinations, based on preference toward quickness, deficit or surplus, and fulfillment of micro nutrients.',
-  'This is no substitute for medical or dietician advisories, especially if planning for a diet with restrictions. However, it’s a better starting point than just chicken, rice and broccoli.',
-];
-
 export default {
   name: 'SettingPanel',
   data: () => ({
     loadingOn: false,
-    introOn: true,
+    introOn: false,
     intro,
   }),
   components: {

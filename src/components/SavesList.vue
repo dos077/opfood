@@ -1,5 +1,6 @@
 <template>
 <q-carousel
+  v-if="!currentList"
   v-model="slide"
   animated
   transition-prev="slide-right"
@@ -32,6 +33,25 @@
     </div>
   </q-carousel-slide>
 </q-carousel>
+<div v-else
+  class="row q-col-gutter-md"
+  :class="isPhone ? 'q-mt-lg' : 'q-mt-sm'"
+>
+  <recipe-card v-for="recipe in currentList" :key="recipe.title" :recipe="recipe"
+    :expanded="tabSelected === 1" />
+  <div class="col-12">
+    <nutrition-list :nutrition="getMarcos(currentList)" title="Marco Requirement Met"
+      :expanded="tabSelected === 0"/>
+  </div>
+  <div class="col-12">
+    <nutrition-list :nutrition="getMicros(currentList)" title="Micro Requirement Met"
+    :expanded="tabSelected === 2" />
+  </div>
+  <div class="col-12">
+    <nutrition-list :nutrition="getOthers(currentList)" title="Other Nutrients"
+    :expanded="tabSelected === 3" />
+  </div>
+</div>
 </template>
 
 <script>
