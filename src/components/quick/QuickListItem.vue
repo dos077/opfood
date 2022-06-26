@@ -7,12 +7,12 @@
     <q-tabs v-model="tab" align="left">
       <q-tab :class="'text-' + recipesColor + '-9'" name="recipes">
         <span class="text-overline">
-          {{ isPhone ? 'recipes' : recipesLabel }}
+          {{ recipesLabel }}
         </span>
       </q-tab>
       <q-tab :class="'text-' + nutritionColor + '-9'" name="nutrition">
         <span class="text-overline">
-          {{ isPhone ? 'nutrition' : nutritionLabel }}
+          {{ nutritionLabel }}
         </span>
       </q-tab>
     </q-tabs>
@@ -102,6 +102,7 @@ export default {
       return Math.round(totalMin / this.list.length);
     },
     recipesLabel() {
+      if (this.isPhone) return `${min2txt(this.avgTime)} AVG`;
       return `recipes - ${min2txt(this.avgTime)} average`;
     },
     recipesColor() {
@@ -146,6 +147,7 @@ export default {
     nutritionLabel() {
       const micro = Math.round(this.avgMicros * 100);
       const macro = Math.round(this.avgMacros * 100);
+      if (this.isPhone) return `ma${macro}%, mi${micro}%`;
       return `Nutrition - Macros ${macro}%, Micros ${micro}%`;
     },
     nutritionColor() {
