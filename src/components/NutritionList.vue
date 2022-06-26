@@ -16,15 +16,18 @@
         <span v-if="expanded" class="text-h6">{{ nutrient.name }}</span>
         <span v-else class="col-7 ellipsis">
           {{ nutrient.name }}
-          <q-tooltip class="text-overline" :hide-delay="isPhone ? 1500 : 0">
-            {{ printN(nutrient) }}
-          </q-tooltip>
         </span>
         <span :class="expanded ? 'q-pt-sm q-ml-sm' : 'col-5 ellipsis text-caption'">
           {{ expanded || nutrient.fraction === undefined ? printN(nutrient) : '' }}
         </span>
         <q-linear-progress v-if="nutrient.fraction" :value="nutrient.fraction % 1"
           :color="getColor(nutrient)" :track-color="getTrackColor(nutrient)"/>
+        <q-tooltip v-if="nutrient.fraction"
+          class="text-overline"
+          :hide-delay="isPhone ? 1500 : 0"
+        >
+          {{ nutrient.name }} {{ printN(nutrient) }}
+        </q-tooltip>
       </div>
     </div>
   </q-card-section>

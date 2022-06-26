@@ -1,5 +1,8 @@
 <template>
-<q-card flat>
+<q-card flat
+  style="max-width: 100vw; overflow: hidden;"
+  class="q-pb-md"
+>
   <q-card-section :class="{ 'q-pa-none': isPhone }">
     <q-separator class="q-mb-md" />
     <div class="row q-col-gutter-md">
@@ -35,9 +38,16 @@
       </div>
     </div>
   </q-card-section>
-  <q-card-actions>
+  <q-card-actions :class="{ 'q-pa-none': isPhone }">
+    <q-btn color="deep-orange-4"
+      to="quick"
+      icon="mdi-arrow-left"
+    >back</q-btn>
     <q-space />
-    <q-btn color="deep-orange-4" @click="$store.dispatch('search')">search</q-btn>
+    <q-btn
+      outline color="deep-orange-4"
+      @click="$store.dispatch('search')"
+    >search</q-btn>
     <q-separator vertical class="q-mx-md" />
     <q-btn flat round dense icon="mdi-information-outline" @click="introOn = true" />
   </q-card-actions>

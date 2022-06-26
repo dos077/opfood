@@ -6,6 +6,7 @@
   <div class="col">
     <q-slider v-model="targetSelected" :min="0" :max="2" :step="1"
       markers :marker-labels="markerLabels"  color="deep-orange-3"
+      class="q-pr-lg"
     />
     <q-tooltip :delay="700">
       <span class="text-caption">
