@@ -48,6 +48,11 @@
       <p v-for="(p, i) in intro" :key="i">
         {{ p }}
       </p>
+      <p>
+        <a href="https://github.com/dos077/opfood">
+          source code in github
+        </a>
+      </p>
     </q-card-section>
     <q-card-actions>
       <q-btn label="find recipes" flat color="deep-orange-4"
