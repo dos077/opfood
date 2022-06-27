@@ -25,26 +25,16 @@
   <q-btn v-if="!currentList"
     class="lt-sm"
     round flat
-    @click="shareUrl"
+    @click="share"
     icon="mdi-share"
   >
-    <q-popup-proxy>
-      <q-banner>
-        Link copied
-      </q-banner>
-    </q-popup-proxy>
   </q-btn>
   <q-btn v-if="!currentList"
     class="gt-xs"
     flat
     icon="mdi-share" label="share"
-    @click="shareUrl"
+    @click="share"
   >
-    <q-popup-proxy>
-      <q-banner>
-        Link copied
-      </q-banner>
-    </q-popup-proxy>
   </q-btn>
   <q-btn v-if="canClose"
     class="lt-sm"
@@ -71,6 +61,21 @@
     </q-card-actions>
   </q-card>
 </q-dialog>
+<q-dialog v-model="shareDialog">
+  <q-card outline>
+    <q-card-section class="text-bold">
+      URL(copied)
+    </q-card-section>
+    <q-card-section class="text-body"
+      style="word-wrap: break-word;"
+    >
+      {{ shareUrl }}
+    </q-card-section>
+    <q-card-actions>
+      <q-btn outline @click="shareDialog = false" color="deep-orange-4">done</q-btn>
+    </q-card-actions>
+  </q-card>
+</q-dialog>
 </template>
 
 <script>
@@ -86,6 +91,7 @@ export default {
   data: () => ({
     savesOpen: false,
     deleteDialog: false,
+    shareDialog: false,
   }),
   computed: {
     ...mapState('saves', ['saveSelected']),
@@ -99,14 +105,21 @@ export default {
         return currentList.every((r) => titles.includes(r.title));
       });
     },
+    shareUrl() {
+      if (!this.saveSelected) return null;
+      const titles = this.saveSelected.map(({ title }) => title);
+      const url = new URL(window.location.href);
+      url.searchParams.append('titles', titles.join('|'));
+      return url.toString();
+    },
   },
   methods: {
-    shareUrl() {
+    share() {
       const titles = this.saveSelected.map(({ title }) => title);
       const url = new URL(window.location.href);
       url.searchParams.append('titles', titles.join('|'));
       navigator.clipboard.writeText(url.toString());
-      this.sharedMsg = true;
+      this.shareDialog = true;
     },
     remove() {
       const { lists, saveSelected } = this;

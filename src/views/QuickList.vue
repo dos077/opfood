@@ -35,23 +35,6 @@
       </div>
     </template>
   </q-infinite-scroll>
-  <q-card v-else
-    style="max-width: 40rem; margin: 2rem auto;"
-    flat
-  >
-    <q-card-section>
-      <p v-for="(p, i) in intro" :key="i">
-        {{ p }}
-      </p>
-    </q-card-section>
-    <q-card-actions>
-      <q-btn @click="$store.dispatch('search')"
-        label="find recipes"
-        color="deep-orange-4"
-        outline
-      />
-    </q-card-actions>
-  </q-card>
 </div>
 </template>
 
